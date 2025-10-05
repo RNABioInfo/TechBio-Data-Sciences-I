@@ -22,5 +22,5 @@ To install R-packages simply add the package name to the "Additional R packages"
 RUN mamba install --yes \
         "r-mosaic" \
         "r-nortest" \
-        "<r-package-1>"
-        "<r-package-2>"
+        "&lt;r-package-1&gt;" \
+        "&lt;r-package-2&gt;"
