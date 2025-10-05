@@ -1,6 +1,6 @@
 # TechBio-Data-Sciences-I
 
-## Quick Start: Test the Docker Container
+### Quick Start: To test the Docker Container
 
 Build the Docker image and start a container with the following commands:
 
@@ -10,3 +10,17 @@ docker build -t biomathematik-docker:latest .
 
 # 2. Run the Docker container
 docker run -it --rm -p 8888:8888 -p 8787:8787 biomathematik-docker:latest
+```
+
+The container can be accessed on:  
+http://localhost:8888/
+
+### Installing packages
+
+To install R-packages simply add the package name to the "Additional R packages" section:
+
+RUN mamba install --yes \
+        "r-mosaic" \
+        "r-nortest" \
+        "<r-package-1>"
+        "<r-package-2>"
