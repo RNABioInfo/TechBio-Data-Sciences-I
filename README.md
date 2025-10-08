@@ -1,5 +1,18 @@
 # TechBio-Data-Sciences-I
 
+### Upload the container to the Github container registry
+
+```bash
+# 1. Build the Docker image
+docker build -t ghcr.io/rnabioinfo/techbio-data-sciences-i:latest -f biomathematik-docker/Dockerfile .
+
+#2. Login via personal access token
+docker login ghcr.io -u RNABioInfo
+
+#3. Push the image
+docker push ghcr.io/rnabioinfo/techbio-data-sciences-i:latest
+```
+
 ### Quick Start: To test the Docker Container
 
 Build the Docker image and start a container with the following commands:
@@ -20,7 +33,7 @@ http://localhost:8888/
 To install R-packages simply add the package name to the "Additional R packages" section:
 
 RUN mamba install --yes \\  
-&nbsp;&nbsp;&nbsp;&nbsp;"r-mosaic" \\  
-&nbsp;&nbsp;&nbsp;&nbsp;"r-nortest" \\  
-&nbsp;&nbsp;&nbsp;&nbsp;"&lt;r-package-1&gt;" \\  
-&nbsp;&nbsp;&nbsp;&nbsp;"&lt;r-package-2&gt;"
+"r-mosaic" \\  
+"r-nortest" \\  
+"&lt;r-package-1&gt;" \\  
+"&lt;r-package-2&gt;"
