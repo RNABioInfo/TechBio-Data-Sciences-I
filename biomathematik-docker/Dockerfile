@@ -55,8 +55,8 @@ RUN pip install --upgrade \
 # Additional R packages
 #
 RUN mamba install --yes \
-        "reticulate" \
-        "png" \
+        "r-reticulate" \
+        "r-png" \
         "r-mosaic" \
         "r-nortest"
 
