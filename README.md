@@ -20,7 +20,7 @@ http://localhost:8888/
 To install R-packages simply add the package name to the "Additional R packages" section:
 
 RUN mamba install --yes \\  
-        "r-mosaic" \\  
-        "r-nortest" \\  
-        "&lt;r-package-1&gt;" \\  
-        "&lt;r-package-2&gt;"
+&nbsp;&nbsp;&nbsp;&nbsp;"r-mosaic" \\  
+&nbsp;&nbsp;&nbsp;&nbsp;"r-nortest" \\  
+&nbsp;&nbsp;&nbsp;&nbsp;"&lt;r-package-1&gt;" \\  
+&nbsp;&nbsp;&nbsp;&nbsp;"&lt;r-package-2&gt;"
