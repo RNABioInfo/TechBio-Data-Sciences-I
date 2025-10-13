@@ -45,8 +45,8 @@ RUN pip install --upgrade \
     ipython \
     ipympl  \
     jupyter-rsession-proxy==2.3.0 \
-    grader-service==0.9.0 \
-    grader-labextension==0.9.0 \
+#    grader-service==0.9.0 \
+#    grader-labextension==0.9.0 \
     && \
     playwright install chromium && \
     fix-permissions "/home/${NB_USER}/.cache"
